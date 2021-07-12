@@ -36,7 +36,7 @@ class UserController {
 
     const { id } = req.params;
 
-    if (id.match(/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/g)) {
+    if (!id.match(/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/g)) {
       return res.status(400).json({ error: 'Invalid id format' });
     }
 
