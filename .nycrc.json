@@ -1,0 +1,7 @@
+{
+  "all": true,
+  "check-coverage": true,
+  "include": ["src/controllers"],
+  "exclude": ["__tests__"],
+  "reporter": ["text", "lcov"]
+}

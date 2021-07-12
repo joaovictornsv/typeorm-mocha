@@ -1,7 +1,8 @@
 {
     "env": {
         "es2021": true,
-        "node": true
+        "node": true,
+        "mocha": true
     },
     "extends": [
         "airbnb-base"
@@ -14,7 +15,7 @@
     "plugins": [
         "@typescript-eslint"
     ],
-    
+
     "rules": {
         "camelcase":"off",
         "no-console":"off",
@@ -39,5 +40,5 @@
             "typescript": {}
         }
     }
-    
+
 }
