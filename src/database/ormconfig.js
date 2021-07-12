@@ -1,4 +1,6 @@
-module.exports = {
+import 'dotenv/config';
+
+export default {
   type: 'postgres',
   host: process.env.TYPEORM_HOST,
   port: process.env.TYPEORM_PORT,
